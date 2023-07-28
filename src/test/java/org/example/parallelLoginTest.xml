@@ -1,0 +1,32 @@
+<suite name="My login suite" parallel="tests" thread-count="2" >
+
+    <listeners>
+        <listener class-name="org.example.utilities.ExtentReporterNG" />
+    </listeners>
+
+    <test name="Chrome test">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="org.example.testcases.Login"/>
+        </classes>
+    </test>
+
+    <test name="Firefox test">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="org.example.testcases.Login"/>
+        </classes>
+    </test>
+
+    <test name="Edge test">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="org.example.testcases.Login"/>
+        </classes>
+    </test>
+
+
+
+
+
+</suite>

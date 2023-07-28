@@ -1,0 +1,21 @@
+<suite name="My suite" parallel="tests" thread-count="3">
+
+    <listeners>
+        <listener class-name="org.example.utilities.ExtentReporterNG" />
+    </listeners>
+    <tests name="My tests">
+        <test name="Test1">
+            <classes>
+                <class name="org.example.testcases.Search"/>
+            </classes>
+        </test>
+
+        <test name="Test2">
+            <classes>
+                <class name="org.example.testcases.Register"/>
+            </classes>
+        </test>
+
+    </tests>
+
+</suite>
